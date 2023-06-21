@@ -1,12 +1,14 @@
 package com.project.GestionPersonne.model;
 
-
+import com.project.GestionPersonne.exception.AgeValidation;
 import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Personne implements Serializable {
     @Id
@@ -16,6 +18,7 @@ public class Personne implements Serializable {
     private String nom;
     private String prenom;
     private String dateDeNaissance;
+    @AgeValidation
     private Integer age;
 
 }
