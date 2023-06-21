@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "20014623-d90c-4259-8806-0346d91090ae",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9945615"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/personne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\" : \"BEN JEMAA\",\r\n    \"prenom\" : \" Ahmed\",\r\n    \"dateDeNaissance\": \"1990-08-17\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
