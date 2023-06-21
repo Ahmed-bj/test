@@ -10,7 +10,7 @@ public interface AutoPersonneMapper {
 
     AutoPersonneMapper MAPPER = Mappers.getMapper(AutoPersonneMapper.class);
 
-    PersonneRequestDTO mapToPersonneDto(Personne user);
+    PersonneRequestDTO mapToPersonneDto(Personne personne);
 
-    Personne mapToPersonne(PersonneRequestDTO userDto);
+    Personne mapToPersonne(PersonneRequestDTO personneDto);
 }
